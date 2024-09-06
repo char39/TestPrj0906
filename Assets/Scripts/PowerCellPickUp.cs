@@ -14,6 +14,7 @@ public class PowerCellPickUp : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             outPostCtrl.AddPowerCell(1);
+            col.SendMessage("CellPickUp", SendMessageOptions.DontRequireReceiver);
             Destroy(gameObject);
         }
     }

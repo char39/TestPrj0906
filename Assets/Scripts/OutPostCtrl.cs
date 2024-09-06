@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class OutPostCtrl : MonoBehaviour
 {
-    public OutPostDoorOpen doorOpen;
+    private OutPostDoorOpen doorOpen;
     private Animation ani;
     private bool isIdle = true;
-    public int powerCell = 0;
-    public int maxPowerCell = 4;
+    private int powerCell = 0;
+    private const int maxPowerCell = 4;
 
     void Start()
     {
